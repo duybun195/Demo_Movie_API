@@ -32,6 +32,7 @@ public static class ConfigureServices
 
         services.AddScoped<ApplicationDbContextInitialiser>();
 
+
         services
             .AddDefaultIdentity<ApplicationUser>()
             .AddRoles<IdentityRole>()
