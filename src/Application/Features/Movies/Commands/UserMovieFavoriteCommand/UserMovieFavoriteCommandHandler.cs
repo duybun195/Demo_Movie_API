@@ -34,6 +34,7 @@ public class UserMovieFavoriteCommandHandler : ApplicationBaseService<UserMovieF
                 MovieId = request.MovieId,
                 UserId = _currentUserService.UserId,
                 IsLike = request.IsLike,
+
                 Status = FavoriteStatus.Active
             };
             await _context.UserMovies.AddAsync(newUserMovie, cancellationToken);
